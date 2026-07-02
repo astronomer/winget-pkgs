@@ -1,0 +1,20 @@
+# Created with WinGet Releaser using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Astronomer.Astro
+PackageVersion: 1.43.1
+InstallerLocale: en-US
+InstallerType: portable
+UpgradeBehavior: install
+Commands:
+- astro
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Podman.CLI
+ReleaseDate: 2026-07-02
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/astronomer/astro-cli/releases/download/v1.43.1/astro_1.43.1_windows_amd64.exe
+  InstallerSha256: D263F01FAA7AD33C59F53CAB831A0EA0A3AB50B14E91969EF2F44FB4BC571282
+ManifestType: installer
+ManifestVersion: 1.12.0
